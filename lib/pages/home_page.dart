@@ -32,8 +32,8 @@ class _HomePageState extends State<HomePage> {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: const [
             Text('Nome do Jogo', style: TextStyle(fontSize: 50),),
-            DefaultButton(text: 'Continuar', route: '/search'),
-            DefaultButton(text: 'Novo Jogo', route: '/'),
+            DefaultButton(text: 'Continuar', route: '/game'),
+            DefaultButton(text: 'Novo Jogo', route: '/game'),
             DefaultButton(text: 'Manual', route: '/'),
             DefaultButton(text: 'Como Jogar', route: '/'),
           ],
