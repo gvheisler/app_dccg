@@ -16,10 +16,21 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text('DCCG Game', style: TextStyle(fontSize: 30, color: Colors.black),),
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.question_mark),
+        onPressed: (){
+
+        },
+      ),
       body: Center(
         child: GestureDetector(
-          child: Text("Test App"),
+          child: Text("Test App", style: TextStyle(fontSize: 50, color: Colors.red[900]),),
+          onTap: (){
+            print('teste');
+          },
         )
       ),
     );
