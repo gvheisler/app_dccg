@@ -28,32 +28,13 @@ class _HomePageState extends State<HomePage> {
         width: double.infinity,
         height: double.infinity,
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            OutlinedButton(
-                onPressed: (){},
-                child: (
-                  const Text('Continue', style: TextStyle(color: Colors.black),)
-                ),
-            ),
-            OutlinedButton(
-              onPressed: (){},
-              child: (
-                  const Text('New Game', style: TextStyle(color: Colors.black),)
-              ),
-            ),
-            OutlinedButton(
-              onPressed: (){},
-              child: (
-                  const Text('Manual', style: TextStyle(color: Colors.black),)
-              ),
-            ),
-            OutlinedButton(
-              onPressed: (){},
-              child: (
-                  const Text('How to play', style: TextStyle(color: Colors.black),)
-              ),
-            ),
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: const [
+            Text('Nome do Jogo', style: TextStyle(fontSize: 50),),
+            DefaultButton(text: 'Continuar', route: '/'),
+            DefaultButton(text: 'Novo Jogo', route: '/'),
+            DefaultButton(text: 'Manual', route: '/'),
+            DefaultButton(text: 'Como Jogar', route: '/'),
           ],
         ),
       )
@@ -82,7 +63,14 @@ class DefaultButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return OutlinedButton(
+      onPressed: (){
+
+      },
+      child: (
+          Text(text, style: const TextStyle(color: Colors.black),)
+      ),
+    );
   }
 }
 

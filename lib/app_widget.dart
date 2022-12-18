@@ -11,18 +11,19 @@ class AppWidget extends StatelessWidget {
       builder: (context, child) {
         return MaterialApp(
           theme: ThemeData(
-            primarySwatch: Colors.grey,
-            primaryColorDark: Colors.blue,
             brightness: AppController.instance.isDarkTheme ? Brightness.dark : Brightness.light,
             outlinedButtonTheme: OutlinedButtonThemeData(
               style: OutlinedButton.styleFrom(
-                backgroundColor: Colors.grey[200],
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                backgroundColor: Colors.teal[100],
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
                 textStyle: const TextStyle(fontSize: 50),
+                elevation: 20,
+                shadowColor: Colors.black,
+                side: BorderSide(color: Colors.black,width: 2)
               )
             ),
           ),
-          home: HomePage(),
+          home: const HomePage(),
         );
       },
     );
