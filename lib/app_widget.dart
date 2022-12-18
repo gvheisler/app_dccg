@@ -14,6 +14,13 @@ class AppWidget extends StatelessWidget {
             primarySwatch: Colors.grey,
             primaryColorDark: Colors.blue,
             brightness: AppController.instance.isDarkTheme ? Brightness.dark : Brightness.light,
+            outlinedButtonTheme: OutlinedButtonThemeData(
+              style: OutlinedButton.styleFrom(
+                backgroundColor: Colors.grey[200],
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                textStyle: const TextStyle(fontSize: 50),
+              )
+            ),
           ),
           home: HomePage(),
         );

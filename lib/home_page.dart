@@ -24,14 +24,38 @@ class _HomePageState extends State<HomePage> {
           SwitchDarkLight(),
         ],
       ),
-      floatingActionButton: FloatingActionButton(
-        child: const Icon(Icons.question_mark),
-        onPressed: (){
-          
-        },
-      ),
-      body: const Align(
-        alignment: Alignment.topRight,
+      body: SizedBox(
+        width: double.infinity,
+        height: double.infinity,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            OutlinedButton(
+                onPressed: (){},
+                child: (
+                  const Text('Continue', style: TextStyle(color: Colors.black),)
+                ),
+            ),
+            OutlinedButton(
+              onPressed: (){},
+              child: (
+                  const Text('New Game', style: TextStyle(color: Colors.black),)
+              ),
+            ),
+            OutlinedButton(
+              onPressed: (){},
+              child: (
+                  const Text('Manual', style: TextStyle(color: Colors.black),)
+              ),
+            ),
+            OutlinedButton(
+              onPressed: (){},
+              child: (
+                  const Text('How to play', style: TextStyle(color: Colors.black),)
+              ),
+            ),
+          ],
+        ),
       )
     );
   }
@@ -49,3 +73,16 @@ class SwitchDarkLight extends StatelessWidget {
     );
   }
 }
+
+class DefaultButton extends StatelessWidget {
+  final String route;
+  final String text;
+
+  const DefaultButton({Key? key, required this.route, required this.text}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
+
