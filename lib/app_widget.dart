@@ -2,6 +2,7 @@ import 'package:app_dccg/controller/app_controller.dart';
 import 'package:app_dccg/pages/search_page.dart';
 import 'package:flutter/material.dart';
 
+import 'pages/game_page.dart';
 import 'pages/home_page.dart';
 
 class AppWidget extends StatelessWidget {
@@ -27,6 +28,7 @@ class AppWidget extends StatelessWidget {
           initialRoute: '/',
           routes: {
             '/': (context) => HomePage(),
+            '/game': (context) => GamePage(),
             '/search': (context) => SearchPage(),
           },
         );
