@@ -34,8 +34,8 @@ class _HomePageState extends State<HomePage> {
             Text('Nome do Jogo', style: TextStyle(fontSize: 50),),
             DefaultButton(text: 'Continuar', route: '/game'),
             DefaultButton(text: 'Novo Jogo', route: '/game'),
-            DefaultButton(text: 'Manual', route: '/'),
-            DefaultButton(text: 'Como Jogar', route: '/'),
+            DefaultButton(text: 'Manual', route: '/manual'),
+            DefaultButton(text: 'Como Jogar', route: '/htp'),
           ],
         ),
       )
