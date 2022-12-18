@@ -1,4 +1,5 @@
 import 'package:app_dccg/app_controller.dart';
+import 'package:app_dccg/buttons.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -55,22 +56,5 @@ class SwitchDarkLight extends StatelessWidget {
   }
 }
 
-class DefaultButton extends StatelessWidget {
-  final String route;
-  final String text;
 
-  const DefaultButton({Key? key, required this.route, required this.text}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return OutlinedButton(
-      onPressed: (){
-
-      },
-      child: (
-          Text(text, style: const TextStyle(color: Colors.black),)
-      ),
-    );
-  }
-}
 

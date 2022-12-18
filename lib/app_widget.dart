@@ -1,4 +1,5 @@
 import 'package:app_dccg/app_controller.dart';
+import 'package:app_dccg/search_page.dart';
 import 'package:flutter/material.dart';
 
 import 'home_page.dart';
@@ -23,7 +24,7 @@ class AppWidget extends StatelessWidget {
               )
             ),
           ),
-          home: const HomePage(),
+          home: const SearchPage(),
         );
       },
     );
