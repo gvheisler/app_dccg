@@ -1,5 +1,5 @@
-import 'package:app_dccg/app_controller.dart';
-import 'package:app_dccg/buttons.dart';
+import 'package:app_dccg/controller/app_controller.dart';
+import 'package:app_dccg/misc/buttons.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -32,7 +32,7 @@ class _HomePageState extends State<HomePage> {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: const [
             Text('Nome do Jogo', style: TextStyle(fontSize: 50),),
-            DefaultButton(text: 'Continuar', route: '/'),
+            DefaultButton(text: 'Continuar', route: '/search'),
             DefaultButton(text: 'Novo Jogo', route: '/'),
             DefaultButton(text: 'Manual', route: '/'),
             DefaultButton(text: 'Como Jogar', route: '/'),

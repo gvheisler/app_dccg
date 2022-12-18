@@ -1,8 +1,8 @@
-import 'package:app_dccg/app_controller.dart';
-import 'package:app_dccg/search_page.dart';
+import 'package:app_dccg/controller/app_controller.dart';
+import 'package:app_dccg/pages/search_page.dart';
 import 'package:flutter/material.dart';
 
-import 'home_page.dart';
+import 'pages/home_page.dart';
 
 class AppWidget extends StatelessWidget {
   @override
@@ -24,7 +24,11 @@ class AppWidget extends StatelessWidget {
               )
             ),
           ),
-          home: const SearchPage(),
+          initialRoute: '/',
+          routes: {
+            '/': (context) => HomePage(),
+            '/search': (context) => SearchPage(),
+          },
         );
       },
     );

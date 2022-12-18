@@ -1,6 +1,6 @@
 
 
-import 'package:app_dccg/buttons.dart';
+import 'package:app_dccg/misc/buttons.dart';
 import 'package:flutter/material.dart';
 
 class SearchPage extends StatefulWidget {
@@ -17,6 +17,9 @@ class _SearchPageState extends State<SearchPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text('Busque um código', style: TextStyle(fontSize: 30, color: Colors.black),),
+      ),
       body: SingleChildScrollView(
         child: SizedBox(
           width: MediaQuery.of(context).size.width,
