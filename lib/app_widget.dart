@@ -1,3 +1,4 @@
+import 'package:app_dccg/app_controller.dart';
 import 'package:flutter/material.dart';
 
 import 'home_page.dart';
@@ -5,9 +6,17 @@ import 'home_page.dart';
 class AppWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(primaryColor: Colors.grey[500]),
-      home: HomePage(),
+    return AnimatedBuilder(
+      animation: AppController.instance,
+      builder: (context, child) {
+        return MaterialApp(
+          theme: ThemeData(
+            primarySwatch: Colors.grey,
+            brightness: AppController.instance.isDarkTheme ? Brightness.dark : Brightness.light,
+          ),
+          home: HomePage(),
+        );
+      },
     );
   }
 }

@@ -1,7 +1,10 @@
+import 'package:app_dccg/app_controller.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
+
+
 
   const HomePage({Key? key}) : super(key: key);
   @override
@@ -12,6 +15,7 @@ class HomePage extends StatefulWidget {
 
 
 class _HomePageState extends State<HomePage> {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,17 +25,18 @@ class _HomePageState extends State<HomePage> {
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.question_mark),
         onPressed: (){
-
+          print('floating');
         },
       ),
-      body: Center(
-        child: GestureDetector(
-          child: Text("Test App", style: TextStyle(fontSize: 50, color: Colors.red[900]),),
-          onTap: (){
-            print('teste');
+      body: Align(
+        alignment: Alignment.topRight,
+        child: Switch(
+          value: AppController.instance.isDarkTheme,
+          onChanged: (value){
+            AppController.instance.ChangeTheme();
           },
-        )
-      ),
+        ),
+      )
     );
   }
 }
