@@ -20,7 +20,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('DCCG Game', style: TextStyle(fontSize: 30, color: Colors.black),),
+        title: const Text('Menu Principal', style: TextStyle(fontSize: 30, color: Colors.black),),
         actions: const [
           SwitchDarkLight(),
         ],

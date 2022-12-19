@@ -20,7 +20,7 @@ class _GamePageState extends State<GamePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('DCCG Game', style: TextStyle(fontSize: 30, color: Colors.black),),
+          title: const Text('Menu de jogo', style: TextStyle(fontSize: 30, color: Colors.black),),
           actions: const [
             SwitchDarkLight(),
           ],
