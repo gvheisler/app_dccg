@@ -1,12 +1,7 @@
-import 'package:app_dccg/controller/app_controller.dart';
-import 'package:app_dccg/pages/help_page.dart';
 import 'package:app_dccg/misc/buttons.dart';
 import 'package:flutter/material.dart';
 
 class GamePage extends StatefulWidget {
-
-
-
   const GamePage({Key? key}) : super(key: key);
   @override
   State<GamePage> createState() {
@@ -34,11 +29,11 @@ class _GamePageState extends State<GamePage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Text('Nome do Jogo', style: TextStyle(fontSize: 50),),
-              DefaultButton(text: 'Buscar Código', route: '/search'),
-              DefaultButton(text: 'Resolver Desafio', route: '/'),
-              DefaultButton(text: 'Batalhar', route: '/'),
-              DefaultButton(text: 'Propor Solução', route: '/'),
+              const Text('Nome do Jogo', style: TextStyle(fontSize: 50),),
+              const DefaultButton(text: 'Buscar Código', route: '/search'),
+              const DefaultButton(text: 'Resolver Desafio', route: '/'),
+              const DefaultButton(text: 'Batalhar', route: '/'),
+              const DefaultButton(text: 'Propor Solução', route: '/'),
               Container(height: 10),
             ],
           ),
