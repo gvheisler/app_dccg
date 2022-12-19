@@ -16,7 +16,7 @@ class SelectionScreen extends StatelessWidget {
         height: double.infinity,
         width: double.infinity,
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Center(
               child: OutlinedButton(
@@ -27,8 +27,11 @@ class SelectionScreen extends StatelessWidget {
                     Text('O Assassinato do\nprofessor Miguel', style: const TextStyle(color: Colors.black),textAlign: TextAlign.center,)
                 ),
               ),
-            )
-
+            ),
+            const SizedBox(height: 40,),
+            const DefaultButton(route: '', text: 'História 2',),
+            const SizedBox(height: 40,),
+            const DefaultButton(route: '', text: 'História 3',),
           ],
         ),
       ),
