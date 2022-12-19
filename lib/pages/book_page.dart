@@ -7,14 +7,14 @@ class BookPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Livro de Regras"),
+        title: const Text("Livro de Regras"),
       ),
       floatingActionButton: FloatingActionButton.extended(
         onPressed: (){
 
         },
-        icon: Icon(Icons.picture_as_pdf),
-        label: Text("Baixar"),
+        icon: const Icon(Icons.picture_as_pdf),
+        label: const Text("Baixar"),
       ),
     );
   }
