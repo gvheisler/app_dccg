@@ -1,9 +1,10 @@
 import 'package:app_dccg/controller/app_controller.dart';
+import 'package:app_dccg/pages/game_page.dart';
+import 'package:app_dccg/pages/home_page.dart';
+import 'package:app_dccg/pages/htp_page.dart';
+import 'package:app_dccg/pages/manual_page.dart';
 import 'package:app_dccg/pages/search_page.dart';
 import 'package:flutter/material.dart';
-
-import 'pages/game_page.dart';
-import 'pages/home_page.dart';
 
 class AppWidget extends StatelessWidget {
   @override
@@ -30,6 +31,8 @@ class AppWidget extends StatelessWidget {
             '/': (context) => HomePage(),
             '/game': (context) => GamePage(),
             '/search': (context) => SearchPage(),
+            '/manual': (context) => ManualPage(),
+            '/htp': (context) => HtpPage(),
           },
         );
       },
