@@ -5,9 +5,12 @@ import 'package:app_dccg/pages/home_page.dart';
 import 'package:app_dccg/pages/htp_page.dart';
 import 'package:app_dccg/pages/manual_page.dart';
 import 'package:app_dccg/pages/search_page.dart';
+import 'package:app_dccg/pages/selection_page.dart';
 import 'package:flutter/material.dart';
 
 class AppWidget extends StatelessWidget {
+  const AppWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
     return AnimatedBuilder(
@@ -23,13 +26,14 @@ class AppWidget extends StatelessWidget {
                 textStyle: const TextStyle(fontSize: 50),
                 elevation: 20,
                 shadowColor: Colors.black,
-                side: BorderSide(color: Colors.black,width: 2)
+                side: const BorderSide(color: Colors.black,width: 2)
               )
             ),
           ),
           initialRoute: '/',
           routes: {
-            '/': (context) => HomePage(),
+            '/': (context) => SelectionScreen(),
+            '/home': (context) => HomePage(),
             '/game': (context) => GamePage(),
             '/search': (context) => SearchPage(),
             '/manual': (context) => ManualPage(),
