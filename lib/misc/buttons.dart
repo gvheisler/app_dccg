@@ -37,10 +37,12 @@ class HelpButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return FloatingActionButton(
+    return FloatingActionButton.extended(
         onPressed: (){
           Navigator.of(context).pushNamed('/help');
         },
+        label: const Text('Ajuda'),
+        icon: const Icon(Icons.question_mark),
     );
   }
 }

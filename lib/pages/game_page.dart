@@ -1,4 +1,5 @@
 import 'package:app_dccg/controller/app_controller.dart';
+import 'package:app_dccg/pages/help_page.dart';
 import 'package:app_dccg/misc/buttons.dart';
 import 'package:flutter/material.dart';
 
@@ -25,20 +26,23 @@ class _GamePageState extends State<GamePage> {
             SwitchDarkLight(),
           ],
         ),
+        floatingActionButton: HelpButton(),
         body: SizedBox(
           width: double.infinity,
           height: double.infinity,
+
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: const [
+            children: [
               Text('Nome do Jogo', style: TextStyle(fontSize: 50),),
               DefaultButton(text: 'Buscar Código', route: '/search'),
               DefaultButton(text: 'Resolver Desafio', route: '/'),
               DefaultButton(text: 'Batalhar', route: '/'),
               DefaultButton(text: 'Propor Solução', route: '/'),
+              Container(height: 10),
             ],
           ),
-        )
+        ),
     );
   }
 }
