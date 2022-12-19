@@ -23,7 +23,7 @@ class AppWidget extends StatelessWidget {
               style: OutlinedButton.styleFrom(
                 backgroundColor: Colors.teal[100],
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-                textStyle: const TextStyle(fontSize: 50),
+                textStyle: const TextStyle(fontSize: 50, fontFamily: 'Impact'),
                 elevation: 20,
                 shadowColor: Colors.black,
                 side: const BorderSide(color: Colors.black,width: 2)

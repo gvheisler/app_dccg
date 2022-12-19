@@ -13,6 +13,21 @@ class HelpPage extends StatelessWidget {
           SwitchDarkLight(),
         ],
       ),
+      body: SizedBox(
+        height: double.infinity,
+        width: double.infinity,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: const [
+            DefaultButton(route: '/livro', text: 'Livro de Regras'),
+            SizedBox(height: 30,),
+            DefaultButton(route: '/notas', text: 'Notas Históricas'),
+            SizedBox(height: 30,),
+            DefaultButton(route: '/htp', text: 'Como Jogar'),
+          ],
+        ),
+        
+      ),
 
     );
   }

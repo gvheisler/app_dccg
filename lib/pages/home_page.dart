@@ -25,12 +25,16 @@ class _HomePageState extends State<HomePage> {
         width: double.infinity,
         height: double.infinity,
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: const [
             Text('Nome do Jogo', style: TextStyle(fontSize: 50),),
+            SizedBox(height: 50,),
             DefaultButton(text: 'Continuar', route: '/game'),
+            SizedBox(height: 30,),
             DefaultButton(text: 'Novo Jogo', route: '/game'),
+            SizedBox(height: 30,),
             DefaultButton(text: 'Manual', route: '/manual'),
+            SizedBox(height: 30,),
             DefaultButton(text: 'Como Jogar', route: '/htp'),
           ],
         ),
