@@ -9,6 +9,13 @@ class BookPage extends StatelessWidget {
       appBar: AppBar(
         title: Text("Livro de Regras"),
       ),
+      floatingActionButton: FloatingActionButton.extended(
+        onPressed: (){
+
+        },
+        icon: Icon(Icons.picture_as_pdf),
+        label: Text("Baixar"),
+      ),
     );
   }
 }

@@ -26,9 +26,7 @@ class HelpPage extends StatelessWidget {
             DefaultButton(route: '/htp', text: 'Como Jogar'),
           ],
         ),
-        
       ),
-
     );
   }
 }

@@ -1,3 +1,4 @@
+import 'package:app_dccg/misc/buttons.dart';
 import 'package:flutter/material.dart';
 
 class ManualPage extends StatelessWidget {
@@ -8,6 +9,16 @@ class ManualPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Manual', style: TextStyle(fontSize: 30, color: Colors.black),),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: const[
+            DefaultButton(route: '/book', text: 'Livro de Regras'),
+            SizedBox(height: 40,),
+            DefaultButton(route: '/notes', text: 'Notas Históricas'),
+          ],
+        ),
       ),
     );
   }
