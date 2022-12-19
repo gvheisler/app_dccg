@@ -29,9 +29,6 @@ class AppWidget extends StatelessWidget {
                 side: const BorderSide(color: Colors.black,width: 2)
               )
             ),
-            /*appBarTheme: AppBarTheme(
-
-            )*/
           ),
           initialRoute: '/',
           routes: {
