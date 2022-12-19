@@ -1,9 +1,11 @@
 import 'package:app_dccg/controller/app_controller.dart';
+import 'package:app_dccg/pages/book_page.dart';
 import 'package:app_dccg/pages/game_page.dart';
 import 'package:app_dccg/pages/help_page.dart';
 import 'package:app_dccg/pages/home_page.dart';
 import 'package:app_dccg/pages/htp_page.dart';
 import 'package:app_dccg/pages/manual_page.dart';
+import 'package:app_dccg/pages/notes_page.dart';
 import 'package:app_dccg/pages/search_page.dart';
 import 'package:app_dccg/pages/selection_page.dart';
 import 'package:flutter/material.dart';
@@ -39,6 +41,8 @@ class AppWidget extends StatelessWidget {
             '/manual': (context) => ManualPage(),
             '/htp': (context) => HtpPage(),
             '/help': (context) => HelpPage(),
+            '/notes': (context) => NotesPage(),
+            '/book': (context) => BookPage(),
           },
         );
       },
