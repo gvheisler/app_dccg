@@ -32,10 +32,10 @@ class _GamePageState extends State<GamePage> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: const [
               Text('Nome do Jogo', style: TextStyle(fontSize: 50),),
-              DefaultButton(text: 'Continuar', route: '/search'),
-              DefaultButton(text: 'Novo Jogo', route: '/'),
-              DefaultButton(text: 'Manual', route: '/'),
-              DefaultButton(text: 'Como Jogar', route: '/'),
+              DefaultButton(text: 'Buscar Código', route: '/search'),
+              DefaultButton(text: 'Resolver Desafio', route: '/'),
+              DefaultButton(text: 'Batalhar', route: '/'),
+              DefaultButton(text: 'Propor Solução', route: '/'),
             ],
           ),
         )
@@ -43,18 +43,7 @@ class _GamePageState extends State<GamePage> {
   }
 }
 
-class SwitchDarkLight extends StatelessWidget {
-  const SwitchDarkLight({Key? key}) : super(key: key);
-  @override
-  Widget build(BuildContext context) {
-    return Switch(
-      value: AppController.instance.isDarkTheme,
-      onChanged: (value){
-        AppController.instance.ChangeTheme();
-      },
-    );
-  }
-}
+
 
 
 

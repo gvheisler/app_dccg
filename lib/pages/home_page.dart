@@ -43,18 +43,6 @@ class _HomePageState extends State<HomePage> {
   }
 }
 
-class SwitchDarkLight extends StatelessWidget {
-  const SwitchDarkLight({Key? key}) : super(key: key);
-  @override
-  Widget build(BuildContext context) {
-    return Switch(
-      value: AppController.instance.isDarkTheme,
-      onChanged: (value){
-        AppController.instance.ChangeTheme();
-      },
-    );
-  }
-}
 
 
 
