@@ -1,3 +1,4 @@
+import 'package:app_dccg/misc/buttons.dart';
 import 'package:flutter/material.dart';
 
 class HelpPage extends StatelessWidget {
@@ -5,6 +6,14 @@ class HelpPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Ajuda"),
+        actions: const [
+          SwitchDarkLight(),
+        ],
+      ),
+
+    );
   }
 }
