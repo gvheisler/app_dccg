@@ -24,7 +24,7 @@ class SelectionScreen extends StatelessWidget {
                   Navigator.of(context).pushReplacementNamed('/home');
                 },
                 child: (
-                    Text('O Assassinato do\nprofessor Miguel', style: const TextStyle(color: Colors.black),textAlign: TextAlign.center,)
+                    Text('O Assassinato do\nprofessor Miguel', textAlign: TextAlign.center,)
                 ),
               ),
             ),
