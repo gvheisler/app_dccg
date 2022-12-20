@@ -25,12 +25,12 @@ class AppWidget extends StatelessWidget {
               style: OutlinedButton.styleFrom(
                 backgroundColor: Colors.grey[200],
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-                textStyle: const TextStyle(fontSize: 50),
+                textStyle: const TextStyle(fontSize: 50, color: Colors.black),
                 side: const BorderSide(color: Colors.black,width: 2)
               )
             ),
             appBarTheme: AppBarTheme(
-
+              titleTextStyle: TextStyle(fontSize: 20)
             )
           ),
           initialRoute: '/',

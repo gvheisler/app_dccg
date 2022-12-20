@@ -8,7 +8,7 @@ class ManualPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Manual', style: TextStyle(fontSize: 30, color: Colors.black),),
+        title: const Text('Manual'),
       ),
       body: Center(
         child: Column(

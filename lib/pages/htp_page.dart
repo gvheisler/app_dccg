@@ -7,7 +7,7 @@ class HtpPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Como Jogar', style: TextStyle(fontSize: 30, color: Colors.black),),
+        title: const Text('Como Jogar'),
       ),
       floatingActionButton: FloatingActionButton.extended(
         onPressed: (){

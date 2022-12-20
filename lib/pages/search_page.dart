@@ -15,7 +15,7 @@ class _SearchPageState extends State<SearchPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Busque um código', style: TextStyle(fontSize: 30, color: Colors.black),),
+        title: const Text('Busque um código'),
       ),
       body: SingleChildScrollView(
         child: SizedBox(

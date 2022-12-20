@@ -13,7 +13,7 @@ class DefaultButton extends StatelessWidget {
         Navigator.of(context).pushNamed(route);
       },
       child: (
-          Text(text, style: const TextStyle(color: Colors.black),)
+          Text(text)
       ),
     );
   }
@@ -50,7 +50,6 @@ class HelpButton extends StatelessWidget {
 
 class HomeButton extends StatelessWidget {
   const HomeButton({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return OutlinedButton(
@@ -58,7 +57,7 @@ class HomeButton extends StatelessWidget {
         Navigator.of(context).pushReplacementNamed('/home');
       },
       child: (
-          const Text('Tela de início', style: const TextStyle(color: Colors.black),)
+          const Text('Início')
       ),
     );
   }
