@@ -47,3 +47,19 @@ class HelpButton extends StatelessWidget {
     );
   }
 }
+
+class HomeButton extends StatelessWidget {
+  const HomeButton({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return OutlinedButton(
+      onPressed: (){
+        Navigator.of(context).pushReplacementNamed('/home');
+      },
+      child: (
+          const Text('Tela de início', style: const TextStyle(color: Colors.black),)
+      ),
+    );
+  }
+}
