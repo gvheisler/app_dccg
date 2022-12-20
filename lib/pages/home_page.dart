@@ -33,9 +33,9 @@ class _HomePageState extends State<HomePage> {
             SizedBox(height: 30,),
             DefaultButton(text: 'Novo Jogo', route: '/game'),
             SizedBox(height: 30,),
-            DefaultButton(text: 'Manual', route: '/manual'),
-            SizedBox(height: 30,),
             DefaultButton(text: 'Como Jogar', route: '/htp'),
+            SizedBox(height: 30,),
+            DefaultButton(text: 'Notas Históricas', route: '/notes'),
           ],
         ),
       )
