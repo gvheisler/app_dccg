@@ -13,7 +13,7 @@ class DefaultButton extends StatelessWidget {
         Navigator.of(context).pushNamed(route);
       },
       child: (
-          Text(text)
+          Text(text, textAlign: TextAlign.center, style: TextStyle(color: Colors.black),)
       ),
     );
   }
@@ -52,12 +52,13 @@ class HomeButton extends StatelessWidget {
   const HomeButton({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return OutlinedButton(
+    return OutlinedButton.icon(
       onPressed: (){
         Navigator.of(context).pushReplacementNamed('/home');
       },
-      child: (
-          const Text('Início')
+      icon: Icon(Icons.home_filled),
+      label: const Text(
+        'Início', style: TextStyle(color: Colors.white),
       ),
     );
   }

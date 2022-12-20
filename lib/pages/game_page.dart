@@ -19,6 +19,7 @@ class _GamePageState extends State<GamePage> {
           title: const Text('Menu de jogo'),
           actions: const [
             SwitchDarkLight(),
+            //HomeButton(),
           ],
         ),
         floatingActionButton: HelpButton(),

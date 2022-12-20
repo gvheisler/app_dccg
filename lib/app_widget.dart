@@ -23,14 +23,13 @@ class AppWidget extends StatelessWidget {
             brightness: AppController.instance.isDarkTheme ? Brightness.dark : Brightness.light,
             outlinedButtonTheme: OutlinedButtonThemeData(
               style: OutlinedButton.styleFrom(
-                backgroundColor: Color(0xD9D9D9),
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
                 textStyle: TextStyle(fontSize: 50, color: Colors.black),
                 side: const BorderSide(color: Colors.black,width: 2)
               )
             ),
-            appBarTheme: AppBarTheme(
-              titleTextStyle: TextStyle(fontSize: 20, color: Colors.white)
+            appBarTheme: const AppBarTheme(
+              titleTextStyle: TextStyle(fontSize: 25, color: Colors.white)
             )
           ),
           initialRoute: '/',
