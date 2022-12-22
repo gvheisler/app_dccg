@@ -75,7 +75,7 @@ class DefaultCButton extends StatelessWidget {
     return CupertinoButton(
       disabledColor: Colors.grey,
       //color: AppController.instance.isDarkTheme ? Colors.red : Colors.blue,
-      color: Colors.blueGrey[300],
+      color: Colors.blueGrey[200],
       onPressed: (){
         Navigator.of(context).pushNamed(route);
 
