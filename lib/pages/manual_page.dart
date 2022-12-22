@@ -14,9 +14,9 @@ class ManualPage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: const[
-            DefaultButton(route: '/book', text: 'Livro de Regras'),
+            DefaultCButton(route: '/book', text: 'Livro de Regras'),
             SizedBox(height: 40,),
-            DefaultButton(route: '/notes', text: 'Notas Históricas'),
+            DefaultCButton(route: '/notes', text: 'Notas Históricas'),
           ],
         ),
       ),
