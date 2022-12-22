@@ -43,6 +43,7 @@ class AppWidget extends StatelessWidget {
             '/help': (context) => HelpPage(),
             '/notes': (context) => NotesPage(),
             '/book': (context) => BookPage(),
+            '/game/battle': (context) => BattlePage
           },
         );
       },
