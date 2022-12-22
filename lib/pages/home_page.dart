@@ -27,22 +27,22 @@ class _HomePageState extends State<HomePage> {
         height: double.infinity,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: [
+          children: const [
             Text('Nome do Jogo', style: TextStyle(fontSize: 50),),
             SizedBox(height: 50,),
-            DefaultButton(text: 'Continuar', route: '/game'),
+            DefaultCButton(text: 'Continuar', route: '/game'),
             SizedBox(height: 30,),
-            DefaultButton(text: 'Novo Jogo', route: '/game'),
+            DefaultCButton(text: 'Novo Jogo', route: '/game'),
             SizedBox(height: 30,),
-            DefaultButton(text: 'Como Jogar', route: '/help/htp'),
-            //SizedBox(height: 30,),
-            //DefaultButton(text: 'Notas Históricas', route: '/help/notes'),
+            DefaultCButton(text: 'Como Jogar', route: '/help/htp'),
             SizedBox(height: 30,),
+            DefaultCButton(text: 'Notas Históricas', route: '/help/notes'),
+            /*SizedBox(height: 30,),
             CupertinoButton.filled(
                 onPressed: () {  },
                 child: Text('Notas Históricas', style: TextStyle(fontSize: 35),),
 
-            )
+            )*/
           ],
         ),
       ) 

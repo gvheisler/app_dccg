@@ -77,7 +77,7 @@ class DefaultCButton extends StatelessWidget {
         Navigator.of(context).pushNamed(route);
       },
       child: (
-          Text(text, textAlign: TextAlign.center, style: TextStyle(color: Colors.black),)
+          Text(text, textAlign: TextAlign.center, style: TextStyle(fontSize: 35),)
       ),
     );
   }
