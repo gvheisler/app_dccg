@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../controller/app_controller.dart';
@@ -59,6 +60,24 @@ class HomeButton extends StatelessWidget {
       icon: Icon(Icons.home_filled),
       label: const Text(
         'Início', style: TextStyle(color: Colors.white),
+      ),
+    );
+  }
+}
+
+class DefaultCButton extends StatelessWidget {
+  final String route;
+  final String text;
+
+  const DefaultCButton({Key? key, required this.route, required this.text}) : super(key: key);
+  @override
+  Widget build(BuildContext context) {
+    return CupertinoButton.filled(
+      onPressed: (){
+        Navigator.of(context).pushNamed(route);
+      },
+      child: (
+          Text(text, textAlign: TextAlign.center, style: TextStyle(color: Colors.black),)
       ),
     );
   }
