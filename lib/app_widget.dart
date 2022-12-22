@@ -25,8 +25,9 @@ class AppWidget extends StatelessWidget {
             outlinedButtonTheme: OutlinedButtonThemeData(
               style: OutlinedButton.styleFrom(
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-                textStyle: TextStyle(fontSize: 50, color: Colors.black),
-                side: const BorderSide(color: Colors.black,width: 2)
+                backgroundColor: Colors.white,
+                textStyle: const TextStyle(fontSize: 50, color: Colors.black),
+                side: const BorderSide(color: Colors.black, width: 2)
               )
             ),
             appBarTheme: const AppBarTheme(
@@ -40,9 +41,9 @@ class AppWidget extends StatelessWidget {
             '/game': (context) => GamePage(),
             '/search': (context) => SearchPage(),
             '/manual': (context) => ManualPage(),
-            '/htp': (context) => HtpPage(),
+            '/help/htp': (context) => HtpPage(),
             '/help': (context) => HelpPage(),
-            '/notes': (context) => NotesPage(),
+            '/help/notes': (context) => NotesPage(),
             '/book': (context) => BookPage(),
             '/game/battle': (context) => BattlePage(),
           },

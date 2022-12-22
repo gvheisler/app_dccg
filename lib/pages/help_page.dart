@@ -19,9 +19,9 @@ class HelpPage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: const [
-            DefaultButton(route: '/notes', text: 'Notas Históricas'),
+            DefaultButton(route: '/help/notes', text: 'Notas Históricas'),
             SizedBox(height: 30,),
-            DefaultButton(route: '/htp', text: 'Como Jogar'),
+            DefaultButton(route: '/help/htp', text: 'Como Jogar'),
           ],
         ),
       ),
