@@ -38,7 +38,7 @@ class _HomePageState extends State<HomePage> {
             DefaultButton(text: 'Notas Históricas', route: '/help/notes'),
           ],
         ),
-      )
+      ) 
     );
   }
 }
