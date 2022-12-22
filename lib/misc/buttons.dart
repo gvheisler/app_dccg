@@ -72,12 +72,17 @@ class DefaultCButton extends StatelessWidget {
   const DefaultCButton({Key? key, required this.route, required this.text}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return CupertinoButton.filled(
+    return CupertinoButton(
+      disabledColor: Colors.grey,
+      //color: AppController.instance.isDarkTheme ? Colors.red : Colors.blue,
+      color: Colors.blueGrey[300],
       onPressed: (){
         Navigator.of(context).pushNamed(route);
+
       },
+      borderRadius: BorderRadius.circular(24),
       child: (
-          Text(text, textAlign: TextAlign.center, style: TextStyle(fontSize: 35),)
+          Text(text, textAlign: TextAlign.center, style: TextStyle(fontSize: 35, color: Colors.black87),)
       ),
     );
   }
