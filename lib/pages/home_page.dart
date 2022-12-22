@@ -1,4 +1,5 @@
 import 'package:app_dccg/misc/buttons.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -26,7 +27,7 @@ class _HomePageState extends State<HomePage> {
         height: double.infinity,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: const [
+          children: [
             Text('Nome do Jogo', style: TextStyle(fontSize: 50),),
             SizedBox(height: 50,),
             DefaultButton(text: 'Continuar', route: '/game'),
@@ -34,8 +35,14 @@ class _HomePageState extends State<HomePage> {
             DefaultButton(text: 'Novo Jogo', route: '/game'),
             SizedBox(height: 30,),
             DefaultButton(text: 'Como Jogar', route: '/help/htp'),
+            //SizedBox(height: 30,),
+            //DefaultButton(text: 'Notas Históricas', route: '/help/notes'),
             SizedBox(height: 30,),
-            DefaultButton(text: 'Notas Históricas', route: '/help/notes'),
+            CupertinoButton.filled(
+                onPressed: () {  },
+                child: Text('Notas Históricas', style: TextStyle(fontSize: 35),),
+
+            )
           ],
         ),
       ) 
