@@ -18,7 +18,7 @@ class SelectionScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Center(
+            Center( 
               child: OutlinedButton(
                 onPressed: (){
                   Navigator.of(context).pushReplacementNamed('/home');

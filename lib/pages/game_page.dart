@@ -14,7 +14,7 @@ class _GamePageState extends State<GamePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return Scaffold( 
         appBar: AppBar(
           title: const Text('Menu de jogo'),
           actions: const [

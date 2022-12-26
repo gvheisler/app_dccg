@@ -22,7 +22,7 @@ class BattlePage extends StatelessWidget {
               height: 500,
               width: 400,
               child: ListView(
-                children: const [
+                children: const [ 
                   DefaultCButton(route: '/', text: 'text'),
                   DefaultCButton(route: '/', text: 'text'),
                   DefaultCButton(route: '/', text: 'text'),

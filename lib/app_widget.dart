@@ -9,7 +9,7 @@ import 'package:app_dccg/pages/manual_page.dart';
 import 'package:app_dccg/pages/notes_page.dart';
 import 'package:app_dccg/pages/search_page.dart';
 import 'package:app_dccg/pages/selection_page.dart';
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart'; 
 
 class AppWidget extends StatelessWidget {
   const AppWidget({super.key});

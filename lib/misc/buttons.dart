@@ -10,7 +10,7 @@ class DefaultButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return OutlinedButton(
-      onPressed: (){
+      onPressed: (){ 
         Navigator.of(context).pushNamed(route);
       },
       child: (
