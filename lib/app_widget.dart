@@ -15,7 +15,7 @@ class AppWidget extends StatelessWidget {
   const AppWidget({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context){
     return AnimatedBuilder(
       animation: AppController.instance,
       builder: (context, child) {
