@@ -44,7 +44,7 @@ class _SearchPageState extends State<SearchPage> {
                   }
                 },
                 child: (
-                    Text('Buscar', style: const TextStyle(color: Colors.black),)
+                    const Text('Buscar', style: TextStyle(color: Colors.black),)
                 ),
               ),
               ],
