@@ -17,21 +17,20 @@ class SelectionScreen extends StatelessWidget {
         width: double.infinity,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Center( 
-              child: OutlinedButton(
+          children: const [
+              /*child: OutlinedButton(
                 onPressed: (){
                   Navigator.of(context).pushReplacementNamed('/home');
                 },
                 child: (
                     Text('O Assassinato do\nprofessor Miguel', textAlign: TextAlign.center,)
                 ),
-              ),
-            ),
-            const SizedBox(height: 40,),
-            const DefaultButton(route: '', text: 'História 2',),
-            const SizedBox(height: 40,),
-            const DefaultButton(route: '', text: 'História 3',),
+        ),*/
+            DefaultCButton(route: '/home', text: 'O Assassinato do\nprofessor Miguel.'),
+            SizedBox(height: 40,),
+            DefaultCButton(route: '', text: 'História 2',),
+            SizedBox(height: 40,),
+            DefaultCButton(route: '', text: 'História 3',),
           ],
         ),
       ),
