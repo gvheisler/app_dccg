@@ -26,11 +26,11 @@ class SelectionScreen extends StatelessWidget {
                     Text('O Assassinato do\nprofessor Miguel', textAlign: TextAlign.center,)
                 ),
         ),*/
-            DefaultCButton(route: '/home', text: 'O Assassinato do\nprofessor Miguel.'),
+            DefaultCButtonR(route: '/home', text: 'O Assassinato do\nprofessor Miguel.'),
             SizedBox(height: 40,),
-            DefaultCButton(route: '', text: 'História 2',),
+            DefaultCButtonR(route: '', text: 'História 2',),
             SizedBox(height: 40,),
-            DefaultCButton(route: '', text: 'História 3',),
+            DefaultCButtonR(route: '', text: 'História 3',),
           ],
         ),
       ),

@@ -87,3 +87,27 @@ class DefaultCButton extends StatelessWidget {
     );
   }
 }
+
+class DefaultCButtonR extends StatelessWidget {
+  final String route;
+  final String text;
+
+  const DefaultCButtonR({Key? key, required this.route, required this.text}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return CupertinoButton(
+      //color: AppController.instance.isDarkTheme ? Colors.red : Colors.blue,
+      color: Colors.blueGrey[200],
+
+      onPressed: (){
+        Navigator.of(context).pushReplacementNamed(route);
+
+      },
+      borderRadius: BorderRadius.circular(24),
+      child: (
+          Text(text, textAlign: TextAlign.center, style: const TextStyle(fontSize: 35, color: Colors.black87),)
+      ),
+    );
+  }
+}
