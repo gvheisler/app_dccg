@@ -1,4 +1,4 @@
-import 'package:app_dccg/misc/buttons.dart';
+import 'package:app_dccg/misc/enemies.dart';
 import 'package:flutter/material.dart';
 
 class BattlePage extends StatelessWidget {
@@ -23,6 +23,7 @@ class BattlePage extends StatelessWidget {
               width: 400,
               child: ListView(
                 children: const [ 
+                  /*DefaultCButton(route: '/', text: 'text'),
                   DefaultCButton(route: '/', text: 'text'),
                   DefaultCButton(route: '/', text: 'text'),
                   DefaultCButton(route: '/', text: 'text'),
@@ -32,8 +33,24 @@ class BattlePage extends StatelessWidget {
                   DefaultCButton(route: '/', text: 'text'),
                   DefaultCButton(route: '/', text: 'text'),
                   DefaultCButton(route: '/', text: 'text'),
-                  DefaultCButton(route: '/', text: 'text'),
-                  DefaultCButton(route: '/', text: 'text'),
+                  DefaultCButton(route: '/', text: 'text'),*/
+                  Inimigo(),
+                  Inimigo(),
+                  Inimigo(),
+                  Inimigo(),
+                  Inimigo(),
+                  Inimigo(),
+                  Inimigo(),
+                  Inimigo(),
+                  Inimigo(),
+                  Inimigo(),
+                  Inimigo(),
+                  Inimigo(),
+                  Inimigo(),
+                  Inimigo(),
+                  Inimigo(),
+                  Inimigo(),
+
                 ],
 
               )

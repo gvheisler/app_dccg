@@ -1,4 +1,4 @@
-import 'package:app_dccg/misc/buttons.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Inimigo extends StatefulWidget {
@@ -13,10 +13,21 @@ class _InimigoState extends State<Inimigo> {
   Widget build(BuildContext context) {
     return Container(
       child: Row(
-        children: const [
-          DefaultCButton(route: '/', text: 'Batalhar'),
-          DefaultCButton(route: '/', text: 'Batalhar'),
-          DefaultCButton(route: '/', text: 'Batalhar')
+        children:  [
+          CupertinoButton(
+              child: Icon(Icons.person),
+              onPressed:( ){
+                
+              }
+          ),
+          Text('Dino da Silva Sauro '),
+          Text('❤❤❤❤❤❤'),
+          CupertinoButton(
+              child: Text('Batalhar'),
+              onPressed:( ){
+
+              }
+          ),
         ],
       )
     );
