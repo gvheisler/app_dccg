@@ -81,7 +81,7 @@ class DefaultCButton extends StatelessWidget {
 
       },
       borderRadius: BorderRadius.circular(24),
-      child: (
+      child: ( 
           Text(text, textAlign: TextAlign.center, style: const TextStyle(fontSize: 35, color: Colors.black87),)
       ),
     );
