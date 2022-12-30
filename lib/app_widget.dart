@@ -1,8 +1,9 @@
 import 'package:app_dccg/controller/app_controller.dart';
 import 'package:app_dccg/pages/game/battle_page.dart';
+import 'package:app_dccg/pages/game/solution_page.dart';
 import 'package:app_dccg/pages/unused/book_page.dart';
 import 'package:app_dccg/pages/game/challenge_page.dart';
-import 'package:app_dccg/pages/menu/game_page.dart';
+import 'package:app_dccg/pages/game/game_page.dart';
 import 'package:app_dccg/pages/general/help_page.dart';
 import 'package:app_dccg/pages/menu/home_page.dart';
 import 'package:app_dccg/pages/menu/htp_page.dart';
@@ -49,6 +50,7 @@ class AppWidget extends StatelessWidget {
             '/game/search': (context) => SearchPage(),
             '/game/battle': (context) => BattlePage(),
             '/game/challenge': (context) => ChallengePage(),
+            '/game/solution': (context) => SolutionPage(),
           },
         );
       },

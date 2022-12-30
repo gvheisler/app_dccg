@@ -5,6 +5,13 @@ class SolutionPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Propor Solução'),
+      ),
+      body: const Center(
+        child: Text("Ainda não implementado!"),
+      ),
+    );
   }
 }
