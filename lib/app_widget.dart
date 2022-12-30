@@ -1,7 +1,7 @@
 import 'package:app_dccg/controller/app_controller.dart';
 import 'package:app_dccg/pages/battle_page.dart';
 import 'package:app_dccg/pages/book_page.dart';
-import 'package:app_dccg/pages/challenge_page.dart';
+import 'package:app_dccg/pages/game/challenge_page.dart';
 import 'package:app_dccg/pages/game_page.dart';
 import 'package:app_dccg/pages/help_page.dart';
 import 'package:app_dccg/pages/home_page.dart';
