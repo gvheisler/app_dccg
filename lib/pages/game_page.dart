@@ -32,7 +32,7 @@ class _GamePageState extends State<GamePage> {
             children: [
               const Text('Nome do Jogo', style: TextStyle(fontSize: 50),),
               const DefaultCButton(text: 'Buscar Código', route: '/search'),
-              const DefaultCButton(text: 'Resolver Desafio', route: '/'),
+              const DefaultCButton(text: 'Resolver Desafio', route: '/game/challenge'),
               const DefaultCButton(text: 'Batalhar', route: '/game/battle'),
               const DefaultCButton(text: 'Propor Solução', route: '/'),
               Container(height: 10),
