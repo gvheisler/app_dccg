@@ -1,3 +1,4 @@
+import 'package:app_dccg/misc/buttons.dart';
 import 'package:flutter/material.dart';
 
 class ChallengePage extends StatelessWidget {
@@ -9,6 +10,7 @@ class ChallengePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Desafio'),
       ),
+      floatingActionButton: const HelpButton(),
     );
   }
 }
