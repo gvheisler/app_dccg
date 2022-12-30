@@ -9,7 +9,7 @@ import 'package:app_dccg/pages/menu/htp_page.dart';
 import 'package:app_dccg/pages/unused/manual_page.dart';
 import 'package:app_dccg/pages/menu/notes_page.dart';
 import 'package:app_dccg/pages/game/search_page.dart';
-import 'package:app_dccg/pages/selection_page.dart';
+import 'package:app_dccg/pages/preface/selection_page.dart';
 import 'package:flutter/material.dart'; 
 
 class AppWidget extends StatelessWidget {
