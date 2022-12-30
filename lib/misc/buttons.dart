@@ -43,8 +43,9 @@ class HelpButton extends StatelessWidget {
         onPressed: (){
           Navigator.of(context).pushNamed('/help');
         },
-        label: const Text('Ajuda'),
-        icon: const Icon(Icons.question_mark),
+        backgroundColor: Colors.blueGrey[200],
+        label: const Text('Ajuda', style: TextStyle(color: Colors.black),),
+        icon: const Icon(Icons.question_mark, color: Colors.black,),
     );
   }
 }
